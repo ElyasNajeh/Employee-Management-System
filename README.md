@@ -45,11 +45,6 @@ Use **Read File** and select `data/employees.csv` to load the included sample re
 
 - `src/main/java/application/` — existing Java classes and application entry point.
 - `src/main/resources/application/` — bundled images and JavaFX CSS.
-- `src/test/java/application/` — file and payment regression tests.
 - `data/employees.csv` — writable employee data.
 - `data/photos/` — sample and user-selected employee photos.
 - `pom.xml`, `mvnw`, `.mvn/` — Maven build and wrapper configuration.
-
-## Architecture
-
-The existing application uses programmatic JavaFX screens and event-handler classes. `EmployeeData` holds the shared employee list, the `Employee` subclasses implement payment rules, and the read/save handlers persist that list to CSV without changing the original package or class organization.
